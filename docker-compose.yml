@@ -1,0 +1,15 @@
+services:
+  rabbitmq :
+    image: rabbitmq:3.13-management
+    ports:
+      - 5672:5672
+      - 15672:15672
+  # rabbitmqstomp :
+  #   build:
+  #     context: .
+  #     dockerfile: ./dockerfile
+      
+  #   ports:
+  #     - 5672:5672
+  #     - 15672:15672
+  #     - 61613:61613
